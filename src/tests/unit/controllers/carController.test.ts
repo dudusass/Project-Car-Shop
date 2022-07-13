@@ -6,11 +6,11 @@ import CarController from '../../../controllers/CarController';
 import { Car } from '../../../interfaces/CarInterface';
 import { carExemplo, carResposta, carsListaResposta, carRespostaAtualizada } from '../mocks/mocks';
 
-describe('[CAR CONTROLLER] => TESTANDO CONTROLLER', () => {
+describe('TESTINGCONTROLLER', () => {
   const carController = new CarController();
 
-  describe(':: VERIFICANDO ACESSO A ROTA /CARS', () => {
-    it(':: VERIFICANDO ROTA /CARS', async () => {
+  describe('ROUTE /CARS', () => {
+    it('EXPECTS TO BE EQUAL /CARS', async () => {
       const result = carController.route;
       expect(result).to.be.equal('/cars');
     });
