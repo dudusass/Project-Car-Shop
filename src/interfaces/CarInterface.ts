@@ -8,4 +8,4 @@ export const CarSchema = vehicleSchema.extend({
 });
 
 export type Car = z.infer<typeof CarSchema>;
-export interface CarDocument extends Document, Car {};
+export interface CarDocument extends Document, Car {}
